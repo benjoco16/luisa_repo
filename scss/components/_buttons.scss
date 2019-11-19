@@ -1,0 +1,107 @@
+.btn {
+
+    padding: .5rem 2rem;
+   
+    &__primary {
+        @extend .btn;
+        background-color: $buttonPrimaryBackgroundColor;
+        border-color: $buttonPrimaryBackgroundColor;
+        box-shadow: 0px 1px 5px -2px $buttonPrimaryBorderColor;
+        color: $buttonPrimaryTextColor;
+        font-weight: $fontWeightMedium;
+
+        &:hover {
+            background-color: $buttonPrimaryBackgroundColorHover;
+            border-color: $buttonPrimaryBackgroundColorHover;
+        }
+
+        &:not(:disabled):not(.disabled):active,
+        &:active,
+        &:focus {
+            background-color: $buttonPrimaryBackgroundColorHover;
+            border-color: $buttonPrimaryBackgroundColorHover;
+        }
+    }
+
+    &__secondary {
+        @extend .btn;
+        background-color: $buttonSecondaryBackgroundColor;
+        border-color: $buttonSecondaryBorderColor;
+        color: $buttonSecondaryTextColor;
+        box-shadow: 0px 1px 5px -2px $buttonSecondaryBorderColor;
+        font-weight: $fontWeightMedium;
+        color: $greyscaleAccent4;
+
+        &:hover {
+            background-color: $buttonSecondaryBackgroundColorHover;
+            border-color: $buttonSecondaryBackgroundColorHover;
+            color: $buttonSecondaryTextColorHover;
+        }
+
+        &:not(:disabled):not(.disabled):active,
+        &:active,
+        &:focus {
+            background-color: $buttonSecondaryBackgroundColorHover;
+            border-color: $buttonSecondaryBackgroundColorHover;
+        }
+    }
+
+    &__tertiary {
+        @extend .btn;
+        background-color: $buttonTertiaryBackgroundColor;
+        border-color: $buttonTertiaryBorderColor;
+        box-shadow: 0px 1px 5px -2px $buttonTertiaryBorderColor;
+        color: $buttonTertiaryTextColor;
+        font-weight: $fontWeightMedium;
+        padding: .5em 2em;
+
+        &:hover {
+            background-color: $buttonTertiaryBackgroundColorHover;
+            border-color: $buttonTertiaryBackgroundColorHover;
+            color: $buttonTertiaryTextColorHover;
+        }
+
+        &:not(:disabled):not(.disabled):active,
+        &:active,
+        &:focus {
+            background-color: $buttonTertiaryBackgroundColorHover;
+            border-color: $buttonTertiaryBackgroundColorHover;
+        }
+    }
+
+    &__quaternary {
+        @extend .btn;
+        background-color: $buttonQuaternaryBackgroundColor;
+        border-color: $buttonQuaternaryBorderColor;
+        box-shadow: 0px 1px 5px -2px $buttonQuaternaryBorderColor;
+        color: $buttonQuaternaryTextColor;
+        font-weight: $fontWeightMedium;
+    
+        &:hover {
+            background-color: $buttonQuaternaryBackgroundColorHover;
+            border-color: $buttonQuaternaryBackgroundColorHover;
+            color: $buttonQuaternaryTextColorHover;
+        }
+    
+        &:not(:disabled):not(.disabled):active,
+        &:active,
+        &:focus {
+            background-color: $buttonQuaternaryBackgroundColorHover;
+            border-color: $buttonQuaternaryBackgroundColorHover;
+        }
+    }
+    
+    // Used for icon spacing
+    span {
+        margin-left: .5em;
+    }
+}
+
+.show > .dropdown-toggle {
+
+    &.btn__primary {
+        background-color: $buttonPrimaryBackgroundColorHover;
+        border-color: $buttonPrimaryBackgroundColorHover;
+    }
+
+}

@@ -1,0 +1,45 @@
+.accordion.accordion-light .risk_accord {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border-left: 8px solid #30a4f0;
+}
+
+
+.accordion.accordion-light .risk_accord .card-header {
+    padding: 0 15px;
+    
+}
+.accordion.accordion-toggle-arrow .card .card-header .card-title.collapsed span {
+    color: #30a4f0;
+    border: 1px solid #30a4f0;
+    background-color: #d6edfc;
+}
+.accordion.accordion-toggle-arrow .card .card-header .card-title span {
+    color: #fca949;
+    border: 1px solid #fca949;
+    padding: 3px 15px;
+    background-color: #fff6ec;
+    border-radius: 17px !important;
+    margin-right: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.accordion.accordion-toggle-arrow .card .card-header .card-title.collapsed,
+.accordion.accordion-toggle-arrow .card .card-header .card-title {
+    color: #2e4269;
+}
+
+.accordion.accordion-light .risk_accord .card-body {
+    padding: 15px;
+}
+.accordion.accordion-light .risk_accord:has(div.collapsed) {
+    border-left: 4px solid #fca949;
+}
+
+.accordion .card.inner-accordion-card .card-header {
+    padding: 10px 15px;
+    border: 1px solid #cfcfcf;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+}

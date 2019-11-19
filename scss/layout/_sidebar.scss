@@ -1,0 +1,23 @@
+.kt-aside {
+    border-radius: 0;
+
+    &--fixed {
+        .kt-aside {
+            position: fixed;
+            top: 60px;
+            bottom: 0;
+            z-index: 94;
+            left: 0;
+        }
+    }
+}
+
+.kt-aside-menu {
+    .kt-menu__nav {
+        padding: 15px 0;
+    }
+    
+    .kt-menu__link {
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,467 @@
+// Abstracts
+@import "abstracts/variables.scss";
+// @import "abstracts/mixins.scss";
+
+// Base
+@import "base/fonts.scss";
+@import "base/text.scss";
+@import "base/theme.scss";
+
+
+
+// @import "base/global.scss";
+
+// Layout
+@import "layout/header.scss";
+@import "layout/subheader.scss";
+@import "layout/sidebar.scss";
+@import "layout/modals.scss";
+// @import "layout/navbar.scss";
+// @import "layout/sidebar.scss";
+// @import "layout/top-navigation.scss";
+// @import "layout/subheader-navigation.scss";
+// @import "layout/dropdowns.scss";
+// @import "layout/footer.scss";
+
+// Components
+@import "components/buttons.scss";
+
+@import "components/progress-bar.scss";
+@import "components/dashboard-cards.scss";
+@import "components/accordion.scss";
+@import "components/switches.scss";
+@import "components/compliance-banner.scss";
+
+
+
+body {
+    background: #fafafa;
+    font-family: $fontPrimary;
+}
+
+// .kt-aside--enabled.kt-aside--fixed .kt-content {
+//     padding-left: 255px;
+// }
+
+
+.fc-unthemed .fc-day-grid td:not(.fc-axis).fc-event-container {
+    padding: 0 0.5rem;
+}
+
+.dashboard_bt button {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+text {
+    font-weight: bold;
+}
+#rlc-container text {
+    font-weight: 600;
+}
+
+/** BODY **/
+.kt-portlet__head-title i {
+    color: #c3c3c3;
+    font-size: 13px;
+}
+.ban_bt button {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.btn-custom-blue {
+    background-color: #30a4f0;
+    color: #fff;
+}
+.btn-custom-blue:hover {
+    background-color: #0f86e0;
+    color: #fff;
+}
+
+
+.kt-badge.kt-badge--red {
+    background: #e65655; 
+}
+.kt-badge.kt-badge--yellow {
+    background: #fce04a; 
+}
+.image_dashboard {
+    width: 100%;
+}
+.bt-color-gray {
+    background-color: #f5f5f5;
+}
+
+
+/** Third Section **/
+
+.gauge_body {
+    max-width: 100%;
+    width: 353px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+#hdc-container {
+    position: relative;
+    margin-top: -90px;
+    z-index: 1;
+}
+.gauge_info {
+    margin-top: -90px;
+    position: relative;
+    z-index: 3;
+}
+.gauge_body h2 {
+    z-index: 2;
+    position: relative;
+}
+.kt-portlet__head {
+    z-index: 99;
+    position: relative;
+}
+
+/** CALENDAR **/
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+    float: none;
+}
+#new_cald .fc-widget-content, 
+#new_cald .fc-widget-header {
+    border: none !important;
+}
+tr:first-child > td > .fc-day-grid-event {
+    box-shadow: unset;
+}
+.fc-unthemed .fc-day-grid td:not(.fc-axis) {
+    text-align: center;
+}
+.fc-unthemed .fc-event.fc-start .fc-content:before, .fc-unthemed .fc-event-dot.fc-start .fc-content:before {
+    background: #e2e5ec;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.raphael-group-115-item > path[stroke-width="2"] {
+    display: none !important;
+}
+.fc-unthemed .fc-event .fc-content {
+    text-align: center;
+    padding: 0;
+}
+.fc-unthemed .fc-event .fc-title,
+.raphael-group-192-creditgroup,
+.raphael-group-311-creditgroup {
+    visibility: hidden;
+    display: none;
+}
+.fc-unthemed .fc-toolbar .fc-button {
+    border: none;
+}
+
+
+.rsum h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 2.6em;
+    color: #676767;
+}
+.raphael-group-312-creditgroup,
+.raphael-group-201-creditgroup,
+.raphael-group-34-creditgroup {
+    display:none !important;
+}
+.raphael-group-127-legendGroup > rect {
+    display: none !important;
+    margin-top: 10px;
+}
+/** Fourth Section **/
+
+.fc-scroller{
+    height: auto !important;
+}
+.raphael-group-29-creditgroup, 
+.raphael-group-107-creditgroup,
+.raphael-group-320-creditgroup {
+    display: none;
+}
+.os_section {
+    font-size:15px ;
+    color: #595959;
+    line-height: 26px;
+}
+.os_section p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+.os_section ul {
+    list-style: none;
+    padding: 0 0 0 10px;
+    margin-bottom:10px;
+}
+.os_section ul li {
+    padding-top: 3px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.os_section i {
+    color: #65b0e7;
+    font-size: 16px;
+}
+.jstree-default .jstree-anchor {
+    color: #47484a;
+    padding: 0 8px 0 4px;
+    font-size: 13px;
+}
+.oblue {
+    color: #65b0e7 !important;
+}
+.os_section i.red {
+    color: #e05555;
+}
+.os_section span.num {
+    background-color: #65b0e7;
+    color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    font-size: 9px;
+    text-align: center;
+    line-height: 21px;
+}
+.notice li {
+    margin-bottom: 8px;
+}
+.notice li i.yellow {
+    color: #e8db38;
+}
+.fc-unthemed .fc-toolbar .fc-button {
+    padding: 10px;
+}
+
+/** Fifth Section **/
+
+.ltable .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f1faff;
+}
+.ltable table tr th,
+.ltable table tr td {
+    color: #989898;
+    font-size: 14px;
+}
+.ltable table tbody tr td i {
+    color: #989898;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+/** Dashboard2 **/
+.second_section_dashboard_2 {
+    margin:20px 0;
+}
+.d2_bt {
+    margin-bottom: 10px;
+}
+.kt_foot_hldr {
+    border-top: 1px solid #ebedf2;
+}
+.kt_foot_hldr .kt-widget15__items {
+    padding:0 25px;
+}
+span.small_pt {
+    font-size:10px;
+}
+
+/** Risk Assesment **/
+.border_red {
+    border: 1px solid red;
+}
+.bgwhite {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+.nopadding {
+    padding: 0;
+}
+.control_progress_bar {
+
+}
+.margin_right {
+    margin-right: 10px;
+}
+
+.task-details textarea {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    margin-top: -1px;
+    padding: 15px;
+    resize: none;
+}
+
+.task-details textarea:active,
+.task-details textarea:focus {
+    outline: 0;
+}
+/**
+**  Risk Assessment
+**/
+
+.rs-image {
+    /* max-height: 50px; */
+    width: auto;
+}
+
+.rs-hazards img {
+    max-width: 75px;
+    margin: 10px 10px 15px 0;
+}
+
+.rs-progress-high-risk {
+    background: #FF0000;
+}
+
+.rs-progress-low-risk {
+    background: #5bbc30;
+}
+
+
+
+
+.risk_accord .collapse.show {
+    border-top: 1px solid #cfcfcf;
+}
+
+.rs-actions {
+    position: fixed;
+    height: auto !important;
+}
+
+.rs-actions .tag {
+    font-size: 9px;
+    margin-top: 15px;
+}
+
+.rs-actions .tag .badge {
+    padding: 1px 0 0 0;
+    width: 18px;
+    line-height: 17px;
+    max-width: 100px;
+    margin-left: 0 !important;
+}
+
+.rs-actions .tag-label {
+    font-size: 12px;
+    color: #2f4368;
+}
+
+.rs-actions-danger {
+    color: #FF0000;
+}
+
+.rs-actions-overdue {
+    color: #faa853;
+}
+.rs-actions-advisory {
+    color: #ecc82d;
+}
+
+.rs-actions .badge.danger {
+    background: #FF0000;
+}
+.rs-actions .badge.overdue {
+    background: #faa853;
+}
+.rs-actions .badge.advisory {
+    background: #ecc82d;
+}
+
+/**
+**  Grid extensions
+**/
+
+.m-grid-padded {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/**
+** Portlet extensions
+**/
+.kt-portlet-spacer {
+    padding: 25px;
+}
+
+/**
+**  Form extensions
+**/
+
+.col-form-label {
+    font-weight: 500;
+    color: #707070;
+}
+
+.form-group .form-control {
+    border-radius: 4px !important;
+}
+
+.input-group-text {
+    border-radius: 5px;
+}
+
+.bootstrap-tagsinput {
+    border-radius: 5px !important;
+    border-color: #e2e5ec;
+    box-shadow: none;
+    width: 100%;
+}
+
+.bootstrap-tagsinput .tag {
+    border-radius: 15px !important;
+    padding: 7px 10px;
+    background: #8DA9BB;
+    font-weight: 400;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+    border: 1px solid #fff;
+    border-radius: 100px !important;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.badge {
+    height: auto;
+}
+
+
+/** Substance Accordion **/
+.si_section {
+    border: 1px solid #ebedf2;
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.table_si tr td {
+    border-top: 0 !important;
+    padding: 13px 10px !important;
+}
+.table_si tr:nth-child(even) {
+    background-color: #f4fbff;
+}
+.table_si tr td a {
+    color: #30a4f0;
+}
+.haz {
+    background-color: #e2e2e2;
+    padding: 15px !important;
+    text-align: center;
+}

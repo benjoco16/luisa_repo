@@ -1,0 +1,134 @@
+// Spacing Variables
+// Change below variable if the height of the navbar changes
+$navbar-base-height: 56px;
+// Change below variable to change the width of the sidenav
+$sidebar-base-width: 180px;
+// Change below variable to change the width of the sidenav when collapsed
+$sidebar-collapsed-width: 90px;
+// Change below variable to change the height of the sticky footer
+$sticky-footer-height: 80px;
+
+h1 {
+    font-size: 2.8rem;
+}
+
+// Font Sizes
+$fontSize__ExtraSmall: 12px !default;
+$fontSize__Small: 14px !default;
+$fontSize__Base: 16px !default;
+$fontSize__Medium: 20px !default;
+$fontSize__Large: 24px !default;
+$fontSize__ExtraLarge: 30px !default;
+
+// Font Families
+$fontPrimary: 'Roboto';
+$fontSecondary: 'Poppins';
+
+// Font Weights
+$fontWeightBold: 700; 
+$fontWeightMedium: 500; 
+$fontWeightRegular: 400;
+
+// Greyscale Colours
+$greyscaleAccent1: #000000;
+$greyscaleAccent2: #ffffff;
+$greyscaleAccent3: #595959;
+$greyscaleAccent4: #707070;
+$greyscaleAccent5: #989898;
+$greyscaleAccent6: #DEDEDE;
+$greyscaleAccent7: #C7C7C7;
+$greyscaleAccent8: #676767;
+$greyscaleAccent9: #C3C3C3;
+
+// Base Colours
+$colorAccent2: #F5F5F5;
+$colorAccent3: #FB4157;
+$colorAccent4: #83E351;
+$colorAccent5: #30A4F0;
+$colorAccent6: #374E7B;
+
+// Warning Colours
+$warningAccent1: #83E351;
+$warningAccent2: #FCE04A;
+$warningAccent3: #E65656;
+
+// Header Colours
+$navigationBackground: $colorAccent2;
+$navigationBackgroundShadow: $greyscaleAccent6;
+$navigationIconColor: $greyscaleAccent5;
+$navigationWarningColor: $colorAccent3;
+
+// Sidebar Colours
+$sidebarBackgroundColour: $greyscaleAccent2;
+$sidebarTextColour: $greyscaleAccent4;
+$sidebarLinkActive: $colorAccent5;
+
+// Button Colours
+
+// Primary Button
+$buttonPrimaryBackgroundColor: $colorAccent5;
+$buttonPrimaryBackgroundColorHover: rgba($buttonPrimaryBackgroundColor, .6);
+$buttonPrimaryTextColor: $greyscaleAccent2;
+$buttonPrimaryBorderColor: $buttonPrimaryBackgroundColor;
+
+// Secondary Button
+$buttonSecondaryBackgroundColor: $greyscaleAccent2;
+$buttonSecondaryBackgroundColorHover: rgba($buttonSecondaryBackgroundColor, .6);
+$buttonSecondaryTextColor: $greyscaleAccent4;
+$buttonSecondaryTextColorHover: rgba($buttonSecondaryTextColor, .9);
+$buttonSecondaryBorderColor: $greyscaleAccent7;
+
+// Tertiary Button
+$buttonTertiaryBackgroundColor: rgba($colorAccent5, .1);
+$buttonTertiaryBackgroundColorHover: rgba($buttonTertiaryBackgroundColor, .6);
+$buttonTertiaryTextColor: $colorAccent5;
+$buttonTertiaryTextColorHover: $colorAccent2;
+$buttonTertiaryBorderColor: $buttonTertiaryTextColor;
+
+// Quaternary Button
+$buttonQuaternaryBackgroundColor: $colorAccent6;
+$buttonQuaternaryBackgroundColorHover: rgba($buttonQuaternaryBackgroundColor, .6);
+$buttonQuaternaryTextColor: $colorAccent5;
+$buttonQuaternaryTextColorHover: $colorAccent2;
+$buttonQuaternaryBorderColor: $buttonQuaternaryTextColor;
+
+
+// Component
+// Banner Component
+$complianceBannerBackgroundColour: #DFEDF7;
+$complianceBannerTextColour: #2E4269;
+$complianceBannerMaxScoreBackground: #BCD5E6;
+$complianceBannerChartVeryPoor: #E65656;
+$complianceBannerChartPoor: #FCA949;
+$complianceBannerChartFair: #FCE04A;
+$complianceBannerChartGood: #81D16F;
+$complianceBannerChartExcellent: #30A4F0;
+
+// Charts
+$chartIndicatorGreen: #81D16F;
+$chartIndicatorAmber: #FCE04A;
+$chartIndicatorRed: #E65656;
+
+// Accordions
+$accordionBody: #F7F7F7;
+$accordionText: #2E4269;
+
+// Modals 
+$modalTitle: $greyscaleAccent3;
+$modalIcon: $greyscaleAccent9;
+$modalClose: $greyscaleAccent4;
+
+// Grids
+$gridHeaderBackgroundColor: #FFFFFF;
+$gridHeaderTextColor: $greyscaleAccent5;
+$gridEvenRow: #F0FAFF;
+$gridOddRow: #FFFFFF;
+
+// Dropdown Navigation
+$dropdownNavigationBackgroundColor: #2E4269;
+$dropdownNavigationBackgroundColorHover: $dropdownNavigationBackgroundColor;
+$dropdownNavigationArrowColor: $dropdownNavigationBackgroundColor;
+$dropdownNavigationTextColor: $greyscaleAccent2;
+$dropdownNavigationTextColorHover: $colorAccent2;
+$dropdownNavigationButtonBackground: #374E7B;
+

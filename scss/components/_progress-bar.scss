@@ -1,0 +1,57 @@
+
+/** Progress bar Section **/
+.kt_col_n0padding div.col {
+    padding:0;
+}
+.kt_col_n0padding div.col .kt-widget15__item .progress {
+    height: 34px;
+    border-radius: 0;
+}
+.pbar_hldr .progress-bar {
+    border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    height: 40px;
+    border-radius: 0;
+}
+.sm_switched .kt-switch label {
+    margin-bottom:0 !important;
+    padding-bottom:0 !important;
+    padding-top:0;
+}
+.kt-badge.kt-badge--dot {
+    line-height: 10px;
+    min-height: 10px;
+    min-width: 10px;
+    height: 10px;
+    width: 10px;
+}
+.progress.progress-lg {
+    height: 40px;
+}
+.bd_text {
+    text-transform: uppercase;
+}
+.bd_text h2 {
+    font-weight: 600;
+    color: #676767;
+}
+.bd_text h2 span {
+    font-size: 12px;
+}
+.bd_text p {
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #989898;
+}
+.custom_green {
+    background: #81d16f;
+}
+.custom_yellow {
+    background: #fce04a;
+}
+.custom_red {
+    background: #e65655;
+}
