@@ -26633,6 +26633,8 @@ body {
     .btn.btn-default.dropdown-toggle {
       border: 1px solid #D3D3D3;
       box-shadow: 2px 3px 10px -8px black; }
+    .btn.btn-default i {
+      color: #989898; }
   .btn-xs {
     padding: 0.2rem 0.3333333333rem;
     font-weight: 500;
@@ -26867,6 +26869,15 @@ body {
 .accordion .CodeMirror {
   border-radius: 0;
   border: none; }
+
+.jstree-open > .jstree-children {
+  padding-left: 20px; }
+.jstree .jstree-ocl {
+  display: none !important; }
+.jstree-default .jstree-node,
+.jstree-default .jstree-leaf > .jstree-ocl,
+.jstree-default .jstree-open > .jstree-ocl {
+  background: none; }
 
 .dashboard-label--xs {
   font-weight: 500;

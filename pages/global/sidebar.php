@@ -51,7 +51,7 @@
                     </a>
                 </li>
                 <li class="kt-menu__item" aria-haspopup="true">
-                    <a href="/sevron/pages/maintenance.php" class="kt-menu__link ">
+                    <a href="/sevron/pages/actions.php" class="kt-menu__link ">
                         <span class="kt-menu__link-icon">
                             <i class="aside-icon message"></i>
                         </span>
@@ -59,7 +59,7 @@
                     </a>
                 </li>
                 <li class="kt-menu__item" aria-haspopup="true">
-                    <a href="/sevron/pages/maintenance.php" class="kt-menu__link ">
+                    <a href="/sevron/pages/reports.php" class="kt-menu__link">
                         <span class="kt-menu__link-icon">
                             <i class="aside-icon pie"></i>
                         </span>

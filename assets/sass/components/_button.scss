@@ -1,5 +1,3 @@
-
-
 .btn {
     box-shadow: 0 7px 9px -10px rgba(0,0,0,0.29);
 
@@ -13,6 +11,10 @@
         &.dropdown-toggle {
             border: 1px solid map-get($custom-colors, 'alto');
             box-shadow: 2px 3px 10px -8px rgba(0,0,0,1)
+        }
+
+        i {
+            color: map-get($custom-colors, 'gray');
         }
     }
 
@@ -66,10 +68,3 @@
 .btn-fix-height {
     height: 46px;
 }
-
-
-// .btn-group-toggle .btn {
-//     background: $primary !important;
-//     border-color: $primary !important;
-//     color: #FFF !important;
-// }

@@ -1,10 +1,10 @@
 <!-- begin:: Subheader -->
 <div class="kt-subheader kt-grid__item" id="kt_subheader">
-    <div class="kt-container  kt-container--fluid">
+    <div class="kt-container kt-container--fluid">
         <div class="kt-subheader__main">
             <!-- Start Create New button -->
                 <div class="dropdown">
-                    <a href="/sevron/pages/maintenance.php" class="btn dropdown-toggle btn-lg btn-primary pl-5 pr-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <a href="/sevron/pages/maintenance.php" class="btn dropdown-toggle btn-lg btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Create New
                     </a>
                     <div class="dropdown-menu dropdown--dark dropdown-menu-fit dropdown-menu-sm">
@@ -60,10 +60,12 @@
                         Assessments
                     </button>
                 </div>
+
                 <a href="/sevron/pages/maintenance.php" class="btn btn-default dopti">
                     <span class="kt-nav__link-icon"><i class="font-md la la-file"></i></span>
                     Template Assessments
                 </a>
+                
                 <a href="/sevron/pages/about.php" class="btn btn-default dopti">
                     About
                 </a>
