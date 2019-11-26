@@ -8,6 +8,51 @@
             display: flex;
             align-items: center;
         }
+
+        &__search-block {
+            display: flex;
+            align-items: center;
+            input[type="text"] {
+                background: transparent;
+                padding: $spacer/2;
+                font-size: 1.4rem;
+                color: #FFF;
+                border: none;
+                width: 100%;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                    border-bottom-color: darken(#FFF, 20%);
+                }
+
+                &:focus,
+                &:active {
+                    border-bottom-color: #FFF;
+                    outline: 0;
+                }
+
+                &::placeholder {
+                    color: #FFF;
+                    opacity: 1; /* Firefox */
+                  }
+                  
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                   color: #FFF;
+                  }
+                  
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                   color: #FFF;
+                  }
+            }
+
+            button {
+                background: none;
+                border: none;
+                font-size: 2.5rem;
+                color: #FFF;
+            }
+        }
+
     
         &__search {
             position: relative;
