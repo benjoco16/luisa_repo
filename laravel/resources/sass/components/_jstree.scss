@@ -1,0 +1,19 @@
+.jstree {
+    &-open {
+        & > .jstree-children {
+            padding-left: 20px;
+        }
+    }
+
+    .jstree-ocl {
+        display: none !important;
+    }
+
+    &-default {
+        .jstree-node,
+        .jstree-leaf > .jstree-ocl,
+        .jstree-open > .jstree-ocl {
+            background: none;
+        }
+    }
+}

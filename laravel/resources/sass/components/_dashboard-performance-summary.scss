@@ -1,0 +1,53 @@
+.performance-summary {
+    &__content {
+        max-width: 100%;
+        width: 353px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    &__chart {
+        position: relative;
+        /* margin-top: -90px; */
+        z-index: 1;
+
+        &-value {
+            // color: map-get($custom-colors, 'ash');
+        }
+
+        .highcharts-container {
+            margin: -65px 0;
+        }
+    }
+
+    &__breakdown {
+        padding-right: $spacer*1.5;
+        padding-left: $spacer;
+        // color: #707070;
+
+        &-value {
+            font-weight: bold;
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+}
+
+
+.performance-summary__breakdown-value {
+    // font-weight: bold;
+    // margin-bottom: 0;
+    // color: #707070;
+    // text-align: left;
+}
+
+.performance-summary__content h2 {
+    // z-index: 2;
+    // position: relative;
+}
