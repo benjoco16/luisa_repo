@@ -7,11 +7,24 @@
         margin-right: $spacer;
         font-size: $font-size-base;
         padding: $spacer $spacer*2.5;
+
+        @media screen and (max-width: 1023px) {
+            padding: $spacer/2;
+        }
     }
 
     @media screen and (max-width: 1023px) {
         .kt-subheader__main .btn {
             padding: $spacer/2 $spacer*2;
+        }
+
+        &__main {
+            justify-content: center !important;
+            width: 100%;
+        }
+
+        &__toolbar {
+            margin: 0 auto;
         }
     }
 

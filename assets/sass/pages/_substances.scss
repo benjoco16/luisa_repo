@@ -12,6 +12,7 @@
         &__search-block {
             display: flex;
             align-items: center;
+
             input[type="text"] {
                 background: transparent;
                 padding: $spacer/2;
@@ -52,8 +53,7 @@
                 color: #FFF;
             }
         }
-
-    
+        
         &__search {
             position: relative;
             margin-left: auto;
