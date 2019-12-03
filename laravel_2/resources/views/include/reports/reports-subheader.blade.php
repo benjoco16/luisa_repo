@@ -69,7 +69,7 @@
                 </button>
             <!-- End Create New Button -->
         </div>
-       @include('global/link-user-guide')
+        @include('include.global.user-guide')
     </div>
 </div>
 <!-- end:: Subheader -->
