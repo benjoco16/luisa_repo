@@ -1,0 +1,203 @@
+.substance-accordion__table {
+    border: 1px solid transparent; 
+    padding: $spacer !important;
+    border-radius: 10px;
+    margin-top: $spacer*1.5 !important;
+    
+}
+
+.task-details {
+    &__control-icons {
+        font-weight: 500;
+        color: map-get($custom-colors, 'ash');
+        padding: $spacer/2 !important;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid #C7C7C7 !important;
+    }
+}
+
+.hazard {
+    &__section {
+        background-color: #e2e2e2;
+        padding: 15px !important;
+        text-align: center;
+    }
+
+    &__symbol {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: map-get($custom-colors, 'light-gray');
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+        text-align: center;
+        height: 100%;
+    }
+
+    &__icon {
+        max-width: 60px;
+    }
+}
+
+.risk-assessment {
+    &__image {
+        width: auto;
+    }
+
+    &__hazards img {
+        max-width: 75px;
+        margin: 10px 10px 15px 0;
+    }
+
+    &__task-details {
+        textarea {
+            width: 100%;
+            border: 1px solid #cfcfcf;
+            margin-top: -1px;
+            padding: 15px;
+            resize: none;
+
+            &:active,
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    &__progress {
+        &--high-risk {
+            background: #FF0000;
+        }
+
+        &--medium-risk {
+            background: #FEAA3C;
+        }
+
+        &--low-risk {
+            background: #5bbc30;
+        }
+    }
+
+    &__portlet--bordered {
+        border: 1px solid map-get($custom-colors, 'silver') !important;
+    }
+
+    &__actions {
+        position: fixed;
+        height: auto !important;
+
+        .tag {
+            font-size: 9px;
+            margin-top: 15px;
+
+            .badge {
+                padding: 1px 0 0 0;
+                width: 18px;
+                line-height: 17px;
+                max-width: 100px;
+                margin-left: 0 !important;
+            }
+
+            &-label {
+                font-size: 12px;
+                color: #2f4368;
+            }
+        }
+
+        &--danger {
+            color: #FF0000;
+        }
+
+        &--overdue {
+            color: #faa853;
+        }
+
+        &--advisory {
+            color: #ecc82d;
+        }
+
+        .badge.danger {
+            background: #FF0000;
+        }
+
+        .badge.overdue {
+            background: #faa853;
+        }
+
+        .badge.advisory {
+            background: #ecc82d;
+        }
+        
+        
+    } 
+
+    .accordion-draggable {
+        margin-right: 10px;
+        i {
+            color: #989898;
+            margin-right: -3px;
+        }
+    }
+
+    .collapse.show {
+        border-top: 1px solid #cfcfcf;
+    }
+
+    .card-header {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
+        .card-title {
+            color: map-get($custom-colors, 'rhino') !important;
+        }
+    }
+
+    .risk-ratings__badge {
+        width: 60px !important;
+
+        &--low {
+            background: #90C83A;
+        }
+
+        &--medium {
+            background: #FDBB00;
+        }
+
+        &--high {
+            background: #F02618;
+        }
+    }
+
+    &__add-section {
+        border: 1px dashed #fff;
+        border-radius: 10px;
+    }
+
+    .card-body__inner-bordered {
+        border: 1px solid map-get($custom-colors, 'silver');
+        border-radius: 5px;
+        width: 100%;
+        min-height: 15px;
+    }
+}
+
+// OTHERS
+
+@media screen and (max-width: 1023px) {
+    .risk-assessment__title,
+    .risk-assessment__controls {
+        margin-bottom: 30px;
+    }
+
+    .risk-assessment__title > .d-flex {
+        flex-direction: column;
+    }
+}
+
+.accordion.accordion-light .risk-assessment {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 1px 0px 14px -11px rgba(0,0,0,0.75);
+    border-left-width: 8px;
+    border-left-style: solid;
+}

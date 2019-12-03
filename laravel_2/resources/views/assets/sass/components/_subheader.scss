@@ -1,0 +1,35 @@
+.kt-subheader {
+    margin: 0;
+    border-bottom: 1px solid lighten(map-get($custom-colors, 'alto'), 10%);
+    z-index: 499;
+
+    .kt-subheader__main .btn:not(.dropdown-toggle-split) {
+        margin-right: $spacer;
+        font-size: $font-size-base;
+        padding: $spacer $spacer*2.5;
+
+        @media screen and (max-width: 1023px) {
+            padding: $spacer/2;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        .kt-subheader__main .btn {
+            padding: $spacer/2 $spacer*2;
+        }
+
+        &__main {
+            justify-content: center !important;
+            width: 100%;
+        }
+
+        &__toolbar {
+            margin: 0 auto;
+        }
+    }
+
+    .btn-default {
+        box-shadow: 2px 3px 10px -8px black;
+        border: 1px solid map-get($custom-colors, 'alto');
+    }
+}

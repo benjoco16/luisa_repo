@@ -1,0 +1,48 @@
+/** CUSTOM VARIABLES **/
+
+$custom-colors: (
+  'blue':           #30a4f0,
+  'light-blue':     #EAF6FF,
+  'white':          #FFF,
+  'light-gray':     #FAFAFA,
+  'alto':           #D3D3D3,
+  'chambray':       #364D7D,
+  'san-juan':       #2e4269,
+  'yellow':         #fce04a,
+  'red':            #e65655,
+  'light-red':      #ffeaed,
+  'green':          #81d16f,
+  'ash':            #707070,
+  'silver':         #CBCBCB,
+  'rhino':          #333F6B,
+  'gray':           #989898,
+  'yellow-orange':  #fdb92c,
+  'neon-orange':    #fd932f,
+  'neon-green':     #87fd3f,
+  'nepal':          #8DA9BB,
+  'light-purple':   #A9B9DA,
+  'purple':         #8C26E6,
+  'striking-red':   #FF0000,
+  'pumpkin':        #FF873F
+);
+
+$primary:                   map-get($custom-colors, 'blue');
+$secondary:                 map-get($custom-colors, 'white');
+$danger:                    map-get($custom-colors, 'red');
+
+$theme-colors: (
+"primary": $primary,
+"secondary": $secondary
+);
+
+$table-border-color:        #f4fbff;
+
+// Spacer
+$spacer:                    1rem;
+
+// Typography
+$font-size-base:            1rem;
+$font-size-sm:              0.875rem;
+$font-size-xs:              0.75rem;
+
+$font-family-sans:          'Roboto';

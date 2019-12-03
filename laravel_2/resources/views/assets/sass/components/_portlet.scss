@@ -1,0 +1,62 @@
+.kt-portlet {
+    &__body {
+        overflow: auto;
+    }
+
+    &__head {
+        z-index: 99;
+        position: relative;
+    }
+
+    &__head-title {
+        i {
+            // color: #c3c3c3;
+            font-size: $font-size-sm;
+        }
+    }
+
+    &--spacer {
+        padding: $spacer*1.8;
+    }
+
+    &__head {
+        &__label {
+            width: 100%;
+        }
+    }
+
+    &--danger {
+        border-top: 7px solid $danger;
+        .kt-portlet__head {
+            color: $danger;
+        }
+    }
+
+    &--warning {
+        border-top: 7px solid map-get($custom-colors, 'neon-orange');
+
+        .kt-portlet__head {
+            color: map-get($custom-colors, 'neon-orange')
+        }
+    }
+}
+
+.sv-portlet {
+    border-radius: 5px;
+    overflow: hidden;
+    padding: $spacer 20px;
+    width: 100%;
+
+    &--bordered {
+        box-shadow: inset 0px 0px 0px 4px #f7f7f7;
+        box-sizing: border-box;
+
+        &-red {
+            box-shadow: inset 0px 0px 0px 4px #ffeaed;
+        }
+
+        &-thin {
+            box-shadow: inset 0px 0px 0px 1px map-get($custom-colors, 'silver');
+        }
+    }
+}

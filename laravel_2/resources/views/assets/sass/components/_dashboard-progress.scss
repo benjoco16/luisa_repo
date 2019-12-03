@@ -1,0 +1,30 @@
+.dash-progress {
+    .progress {
+        &.progress-lg {
+            height: 40px;
+        }
+
+        .progress-bar {
+            border-radius: 0 !important;
+            height: 40px;
+            border-radius: 0;
+        }
+
+        &-bar--green {
+            background: map-get($custom-colors, 'green');
+        }
+
+        &-bar--yellow {
+            background: map-get($custom-colors, 'yellow');
+        }
+
+        &-bar--red {
+            background: map-get($custom-colors, 'red');
+        }
+    }
+
+    .kt-badge.kt-badge--dot  {
+        min-width: 10px;
+        min-height: 10px;
+    }
+}

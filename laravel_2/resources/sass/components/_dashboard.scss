@@ -1,0 +1,26 @@
+.dashboard-label {
+    &--xs {
+        font-weight: 500;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        margin-bottom: 0;
+        color: map-get($custom-colors, 'gray');
+        max-width: 65px;
+
+        span.title {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        & > i {
+            margin-right: 5px;
+        }
+    }
+}
+.pyramid-container {
+    min-height: 270px;
+}

@@ -1,0 +1,66 @@
+.raphael-group-29-creditgroup, 
+.raphael-group-107-creditgroup,
+.raphael-group-320-creditgroup,
+.canvasjs-chart-credit  {
+    display: none;
+}
+
+.dash-org-chart {
+    font-size:15px ;
+    color: map-get($custom-colors, 'ash');
+    line-height: 26px;
+
+    p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: $font-size-sm;
+        font-weight: 400;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 0 0 $spacer/1.5;
+        margin-bottom: $spacer/1.5;
+
+        li {
+            padding-top: 3px;
+            font-size: $font-size-sm;
+            font-weight: 400;
+        }
+    }
+
+    i {
+        color: $primary;
+        font-size: $font-size-base;
+
+        &.red {
+            color: $red;
+        }
+    }
+
+    .num {
+        $size: 20px;
+
+        background-color: $primary;
+        color: #fff;
+        border-radius: 50%;
+        height: $size;
+        width: $size;
+        display: inline-block;
+        font-size: $font-size-xs;
+        text-align: center;
+        line-height: 21px;
+    }
+}
+
+.notice {
+    li {
+        margin-bottom: $spacer/2;
+    }
+}
+
+.jstree-default .jstree-anchor {
+    color: map-get($custom-colors, 'ash');;
+    padding: 0 $spacer/2 0 $spacer/4;
+    font-size: $font-size-sm;
+}
