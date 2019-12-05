@@ -67,7 +67,7 @@
             <!-- End Create New Button -->
         </div>
         <?php //include('./global/link.user-guide.php') ?>
-        @include('include.includes.user-guide')
+        @include('include.global.user-guide')
     </div>
 </div>
 <!-- end:: Subheader -->
