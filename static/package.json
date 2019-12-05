@@ -1,9 +1,0 @@
-{
-    "scripts": {
-        "sass": "node-sass -w assets/sass/app.scss -o assets/css/dist --source-map-root assets/css/dist --source-map true --source-map-embed"
-    },
-    "dependencies": {
-        "bootstrap": "^4.3.1",
-        "node-sass": "^4.13.0"
-    }
-}
