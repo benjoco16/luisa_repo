@@ -1,7 +1,7 @@
 <!-- Start Banner Section -->
 <div class="hero d-flex ml-0">
     <div class="hero__description">
-        <p>COSHH COMPLIANCE</p>
+        <p>COSHH COMPLIANCSSSSSE</p>
         <h2>How compliant are you?</h2>
         <div class="hero__description-score">85.5%</div>
         

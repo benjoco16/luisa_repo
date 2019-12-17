@@ -19,7 +19,8 @@
     </div>
 
     <div class="hero__chart">
-        <div id="heroChart"></div>
+        <div id="heroChart" style="height: 400px;"></div>
+        
     </div>
 </div>
 <!-- End Banner Section -->

@@ -24,6 +24,10 @@ Route::get('/reports', 'PagesController@reports');
 Route::get('/risk-assessment', 'PagesController@riskassessment');
 Route::get('/substances', 'PagesController@substances');
 
+Route::get('/gauge', function () {
+    return view('gauge-sample');
+});
+
 
 /*
 Route::get('/about', function(){

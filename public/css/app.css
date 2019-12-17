@@ -42471,6 +42471,30 @@ body a {
   margin-right: 5px;
 }
 
+.hero__chart-description-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.hero__chart-description-wrapper img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.hero__chart .highcharts-background {
+  fill: transparent;
+}
+
 .pyramid-container {
   min-height: 270px;
 }
@@ -42832,7 +42856,7 @@ tr:first-child > td > .fc-day-grid-event {
 }
 
 .hero {
-  background-color: #d6edfc;
+  background-color: #DFEDF7;
   width: 100%;
   margin-left: 0.66666667rem;
   margin-right: 0.66666667rem;
@@ -42954,6 +42978,7 @@ tr:first-child > td > .fc-day-grid-event {
   z-index: 2;
   max-width: 700px;
   width: 100%;
+  height: 400px;
   margin-left: auto;
 }
 
@@ -43003,7 +43028,6 @@ tr:first-child > td > .fc-day-grid-event {
   background: #bdd4e6;
   padding: 12px 9px;
   border-radius: 6px;
-  width: 80%;
   margin: 0 auto;
 }
 

@@ -1,128 +1,120 @@
-var bannerChart = Highcharts.chart('heroChart', {
-	chart: {
-	  plotBackgroundColor: null,
-	  plotBorderWidth: 0,
-	  backgroundColor: null,
-	  className: "hero__chart-inner",
-	  plotShadow: false,
-	  type: 'pie',
-	},
-	title: {
-	  text: '<div class="hero__chart-description">Current Score</div>'+
-				'<div class="hero__chart-description-score">855</div>'+
-				'<div class="hero__chart-description-total">out of 1000</div>'+
-				'<div class="hero__chart-description-result">' + 
-					'FAIR' + 
-					'<i class="fa fa-question-circle" data-container=".hero__chart" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
-				'</div>'+
-			'</div>',
-  
-	  align: 'center',
-	  verticalAlign: 'middle',
-	  useHTML: true,
-	  y: 68,
-	  x: 16
-	},
-	
-	navigation: {
-	  buttonOptions: 
-	  {
-		enabled: false
-	  }
-	},
-	credits: {
-		enabled: false
-	},
-	tooltip: {
-	  enabled: false,
-	  pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-	},
-	plotOptions: {
-	  pie: {
-		dataLabels: {
-		  enabled: false,
-		  distance: -0.5,
-		  alignTo: 'toPlotEdges',
-		  style: {
-			fontWeight: 'bold',
-			color: 'white'
-		  }
-		},
-		startAngle: -120,
-		endAngle: 120,
-		center: ['52.7%', '64%'],
-		size: '100%'
-	  }
-	},
-	series: [{
-	  type: 'pie',
-	  name: 'Current Score',
-	  innerSize: '75%',
-	  colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
-	  
-	  /*data: [
-		['Very Poor', 20],
-		['Poor', 20],
-		['Fair', 20],
-		['Good', 20],
-		['Excellent', 20]
-	  ],*/
-  
-	  data: [{
-		name: "VERY POOR",
-		y: 1.5
-	  }, {
-		name: "POOR",
-		y: 1.5
-	  }, 
-	  {
-		name: "FAIR",
-		y: 1.5 
-	  }, {
-		name: "GOOD",
-		y: 1.5
-	  },{
-		name: "EXCELLENT",
-		y: 1.6
-	  }]
-	}],
-  },
-  function(chart) {
-	var ren = chart.renderer,
-	  shapeArgs = chart.series[0].points[0].shapeArgs,
-	  cx = chart.plotLeft + chart.plotWidth / 1.9,
-	  cy = chart.plotTop + chart.plotHeight / 1.6,
-	  r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
-  
-	// add a path for a text
-	ren.path()
-	  .attr({
-		id: "MyPath",
-		d: "M " + cx + " " + cy + //center
-		  " m 0 " + (-r) + //start at top
-		  " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
-		  " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
-	  }).add(ren.defs);
-  
-  
-	Highcharts.each(chart.series[0].points, function(point, i) {
-	  var dataLabelText = point.name,
-		label = ren.text(dataLabelText).attr({
-		  zIndex: 3, // place on top of a pie
-		  'text-anchor': 'middle', // center text in a slice (middle angle)
-		}).add(),
-		offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
-		textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
-		tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
-		text = document.createTextNode(label.textStr);
-  
-	  textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
-	  textPath.setAttribute('startOffset', offset);
-	  tspan.appendChild(text);
-	  textPath.appendChild(tspan);
-	  $(label.element).html(textPath);
+var rawData = 85.5,
+data = getData(rawData);
+
+function getData(rawData) {
+  var data = [],
+	start = Math.round(Math.floor(rawData / 10) * 10);
+  data.push(rawData);
+  for (i = start; i > 0; i -= 10) {
+	data.push({
+	  y: i
 	});
-  });
+  }
+  return data;
+}
+
+Highcharts.chart('heroChart', {
+	chart: {
+		type: 'solidgauge',
+		marginTop: 10
+	},
+  
+	title: {
+		text: ''
+  	},
+  
+	subtitle: {
+		text: '<div class="hero__chart-description-wrapper" style="width: 265px; height: 180px;">'+
+				'<img src="/images/dashboard/banner-bg.png">'+
+				'<div class="hero__chart-description">Current Score</div>'+
+					'<div class="hero__chart-description-score">855</div>'+
+					'<div class="hero__chart-description-total">out of 1000</div>'+
+					'<div class="hero__chart-description-result">' + 
+						'FAIR' + 
+						'<i class="fa fa-question-circle" data-container=".hero__chart" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
+					'</div>'+
+				'</div>' +
+			'</div>',
+		style: {
+			'font-size': '60px'
+		},
+		useHTML: true,
+		y: 200,
+		zIndex: 7
+	},
+
+	tooltip: {
+		enabled: false
+	},
+
+  pane: [{
+	startAngle: -130,
+	endAngle: 130,
+	background: [{ // Track for Move
+	  outerRadius: '100%',
+	  innerRadius: '80%',
+	  backgroundColor: '#BCD5E6',
+	  borderWidth: 0,
+	  shape: 'arc'
+	}],
+	size: '95%',
+	center: ['50%', '65%']
+  }, {
+	startAngle: -130,
+	endAngle: 130,
+	size: '75%',
+	center: ['50%', '65%'],
+	background: []
+  }],
+
+  yAxis: [{
+	min: 0,
+	max: 100,
+	lineWidth: 2,
+	lineColor: 'transparent',
+	tickInterval: 20,
+	labels: {
+	  enabled: false
+	},
+	minorTickWidth: 0,
+	tickLength: 50,
+	tickWidth: 10,
+	tickColor: '#d6edfc',
+	zIndex: 9999,
+	stops: [
+	  [0, '#fff'],
+	  [0.101, 'rgb(224,86,83)'],
+	  [0.201, 'rgb(224,86,83)'],
+	  [0.301, 'rgb(234,173,105)'],
+	  [0.401, 'rgb(234,173,105)'],
+	  [0.501, '#fae054'],
+	  [0.601, '#fae054'],
+	  [0.701, '#81D16F'],
+	  [0.801, '#81D16F'],
+	  [0.901, '#81D16F'],
+	  [1, '#81D16F']
+	]
+  }, {
+	linkedTo: 0,
+	pane: 1,
+	lineWidth: 5,
+	lineColor: '#d6edfc',
+	tickPositions: [],
+	zIndex: 6
+  }],
+  
+  series: [{
+	animation: false,
+	dataLabels: {
+	  enabled: false
+	},
+	borderWidth: 0,
+	color: Highcharts.getOptions().colors[0],
+	radius: '100%',
+	innerRadius: '80%',
+	data: data
+  }]
+}, );
 
 var INCIDENT_SUMMARY = {
 	init: function () {

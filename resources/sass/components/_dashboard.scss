@@ -21,6 +21,29 @@
         }
     }
 }
+
+.hero__chart-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+    img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+
+}
+
+.hero__chart {
+    .highcharts-background {
+        fill: transparent;
+    }
+}
+
 .pyramid-container {
     min-height: 270px;
 }
