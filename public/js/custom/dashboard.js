@@ -16,7 +16,7 @@ function getData(rawData) {
 Highcharts.chart('heroChart', {
 	chart: {
 		type: 'solidgauge',
-		marginTop: 10
+		marginTop: 0
 	},
   
 	title: {
@@ -24,7 +24,7 @@ Highcharts.chart('heroChart', {
   	},
   
 	subtitle: {
-		text: '<div class="hero__chart-description-wrapper" style="width: 265px; height: 180px;">'+
+		text: '<div class="hero__chart-description-wrapper" style="width: 280px; height: 180px;">'+
 				'<img src="/images/dashboard/banner-bg.png">'+
 				'<div class="hero__chart-description">Current Score</div>'+
 					'<div class="hero__chart-description-score">855</div>'+
@@ -40,6 +40,7 @@ Highcharts.chart('heroChart', {
 		},
 		useHTML: true,
 		y: 200,
+		x: 0,
 		zIndex: 7
 	},
 
@@ -57,12 +58,12 @@ Highcharts.chart('heroChart', {
 	  borderWidth: 0,
 	  shape: 'arc'
 	}],
-	size: '95%',
+	size: '100%',
 	center: ['50%', '65%']
   }, {
 	startAngle: -130,
 	endAngle: 130,
-	size: '75%',
+	size: '100%',
 	center: ['50%', '65%'],
 	background: []
   }],
@@ -70,7 +71,7 @@ Highcharts.chart('heroChart', {
   yAxis: [{
 	min: 0,
 	max: 100,
-	lineWidth: 2,
+	lineWidth: 0,
 	lineColor: 'transparent',
 	tickInterval: 20,
 	labels: {
@@ -97,7 +98,7 @@ Highcharts.chart('heroChart', {
   }, {
 	linkedTo: 0,
 	pane: 1,
-	lineWidth: 5,
+	lineWidth: 0,
 	lineColor: '#d6edfc',
 	tickPositions: [],
 	zIndex: 6
@@ -114,7 +115,44 @@ Highcharts.chart('heroChart', {
 	innerRadius: '80%',
 	data: data
   }]
-}, );
+}, function (chart) {
+	var ren = chart.renderer;
+	var shapeArgs = chart.series[0].points[0].shapeArgs,
+	cx = chart.plotLeft + chart.plotWidth / 1.9,
+	cy = chart.plotTop + chart.plotHeight / 1.6,
+	r = (shapeArgs.r + shapeArgs.innerR) / 1.7;
+
+	ren.path()
+	  .attr({
+		id: "MyPath",
+		d: "M " + cx + " " + cy + //center
+		  " m 0 " + (-r) + //start at top
+		  " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
+		  " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
+	  }).add(ren.defs);
+	
+	var legends = [ 'VERY POOR', 'POOR', 'FAIR', 'GOOD', 'EXCELLENT' ];
+
+	  Highcharts.each(legends, function(point, i) {
+		var dataLabelText = point.name,
+		  label = ren.text(dataLabelText).attr({
+			zIndex: 3, // place on top of a pie
+			'text-anchor': 'middle', // center text in a slice (middle angle)
+		  }).add();
+
+
+		var offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%'; // at what percent of circle path start
+		var textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
+		  tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
+		  text = document.createTextNode(label.textStr);
+	
+		textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
+		textPath.setAttribute('startOffset', offset);
+		tspan.appendChild(text);
+		textPath.appendChild(tspan);
+		$(label.element).html(textPath);
+	  });
+} );
 
 var INCIDENT_SUMMARY = {
 	init: function () {
