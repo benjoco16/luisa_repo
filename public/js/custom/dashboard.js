@@ -24,7 +24,7 @@ Highcharts.chart('heroChart', {
   	},
   
 	subtitle: {
-		text: '<div class="hero__chart-description-wrapper" style="width: 280px; height: 180px;">'+
+		text: '<div class="hero__chart-description-wrapper" style="width: 265px; height: 180px;">'+
 				'<img src="/images/dashboard/banner-bg.png">'+
 				'<div class="hero__chart-description">Current Score</div>'+
 					'<div class="hero__chart-description-score">855</div>'+
@@ -58,12 +58,12 @@ Highcharts.chart('heroChart', {
 	  borderWidth: 0,
 	  shape: 'arc'
 	}],
-	size: '100%',
+	size: '95%',
 	center: ['50%', '65%']
   }, {
 	startAngle: -130,
 	endAngle: 130,
-	size: '100%',
+	size: '95%',
 	center: ['50%', '65%'],
 	background: []
   }],
@@ -118,9 +118,9 @@ Highcharts.chart('heroChart', {
 }, function (chart) {
 	var ren = chart.renderer;
 	var shapeArgs = chart.series[0].points[0].shapeArgs,
-	cx = chart.plotLeft + chart.plotWidth / 1.9,
-	cy = chart.plotTop + chart.plotHeight / 1.6,
-	r = (shapeArgs.r + shapeArgs.innerR) / 1.7;
+	cx = chart.plotLeft + chart.plotWidth / 2,
+	cy = chart.plotTop + chart.plotHeight / 1.55,
+	r = (shapeArgs.r + shapeArgs.innerR) / 1.72;
 
 	ren.path()
 	  .attr({
@@ -131,10 +131,33 @@ Highcharts.chart('heroChart', {
 		  " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
 	  }).add(ren.defs);
 	
-	var legends = [ 'VERY POOR', 'POOR', 'FAIR', 'GOOD', 'EXCELLENT' ];
+	var legends = [
+		{ 
+			label: 'VERY POOR',
+			angle: 2.85
+		},
+
+		{ 
+			label: 'POOR',
+			angle: 3.8
+		},
+
+		{ 
+			label: 'FAIR',
+			angle: -1.5
+		},
+		{ 
+			label: 'GOOD',
+			angle: -0.6
+		},
+		{ 
+			label: 'EXCELLENT',
+			angle: 0.35
+		}
+	];
 
 	  Highcharts.each(legends, function(point, i) {
-		var dataLabelText = point.name,
+		var dataLabelText = point.label,
 		  label = ren.text(dataLabelText).attr({
 			zIndex: 3, // place on top of a pie
 			'text-anchor': 'middle', // center text in a slice (middle angle)

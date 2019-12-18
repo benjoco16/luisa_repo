@@ -17,6 +17,7 @@
 <div class="mt-4"> 
     <div class="row">
     <div id="heroChart2"></div>
+        
         @include('include.dashboard.section-progress-bars')
         @include('include.dashboard.section-performance-summary')
         @include('include.dashboard.section-monthly-rates')
@@ -38,12 +39,13 @@
 <script src="{{ URL::to('js/custom/canvasjs.min.js') }}"></script>
 <script src="{{ URL::to('js/custom/fusioncharts.js') }}"></script>
 <script src="{{ URL::to('js/custom/fusioncharts.theme.fint.js?cacheBust=56') }}"></script>
-<!-- <script src="{{ URL::to('js/custom/jscharts.min.js') }}"></script>
-<script src="{{ URL::to('js/custom/jscharts.more.js') }}"></script>
-<script src="{{ URL::to('js/custom/jscharts.solidgauge.js') }}"></script> -->
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+<script src="{{ URL::to('js/custom/highcharts.js') }}"></script>
+<script src="{{ URL::to('js/custom/highcharts-more.js') }}"></script>
+<script src="{{ URL::to('js/custom/solid-gauge.js') }}"></script>
+<!-- <script src="{{ URL::to('js/custom/jscharts.solidgauge.js') }}"></script> -->
+<!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+<!-- <script src="https://code.highcharts.com/highcharts-more.js"></script> -->
+<!-- <script src="https://code.highcharts.com/modules/solid-gauge.js"></script> -->
 
 <script src="{{ URL::to('js/custom/jstree.min.js') }}"></script>
 <script src="{{ URL::to('js/custom/charts.bundle.min.js') }}"></script>
