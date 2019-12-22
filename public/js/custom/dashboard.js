@@ -1,7 +1,7 @@
 var rawData = 85.5,
 data = getData(rawData);
 
-function getData(rawData) {
+function getData (rawData) {
   var data = [],
 	start = Math.round(Math.floor(rawData / 10) * 10);
   data.push(rawData);
@@ -55,7 +55,8 @@ Highcharts.chart('heroChart', {
 	  outerRadius: '100%',
 	  innerRadius: '80%',
 	  backgroundColor: '#BCD5E6',
-	  borderWidth: 0,
+	  borderWidth: 1,
+	  borderColor: '#d6edfc',
 	  shape: 'arc'
 	}],
 	size: '95%',
@@ -71,8 +72,8 @@ Highcharts.chart('heroChart', {
   yAxis: [{
 	min: 0,
 	max: 100,
-	lineWidth: 0,
-	lineColor: 'transparent',
+	lineWidth: 1,
+	lineColor: '#d6edfc',
 	tickInterval: 20,
 	labels: {
 	  enabled: false
@@ -82,6 +83,7 @@ Highcharts.chart('heroChart', {
 	tickWidth: 10,
 	tickColor: '#d6edfc',
 	zIndex: 9999,
+	gridLineColor: '#d6edfc',
 	stops: [
 	  [0, '#fff'],
 	  [0.101, 'rgb(224,86,83)'],
@@ -105,7 +107,7 @@ Highcharts.chart('heroChart', {
   }],
   
   series: [{
-	animation: false,
+	animation: true,
 	dataLabels: {
 	  enabled: false
 	},
@@ -159,7 +161,9 @@ Highcharts.chart('heroChart', {
 	  Highcharts.each(legends, function(point, i) {
 		var dataLabelText = point.label,
 		  label = ren.text(dataLabelText).attr({
-			zIndex: 3, // place on top of a pie
+			zIndex: 3, // place on top of a pie,
+			'font-weight': '900',
+			fill: '#35446d',
 			'text-anchor': 'middle', // center text in a slice (middle angle)
 		  }).add();
 
@@ -194,7 +198,6 @@ var INCIDENT_SUMMARY = {
 			}]
 		}).render();
 	},
-
 	dataPoints: [
 		{ y: 16, label: "Fatalities", color: '#30a4f0', lineColor: '#FFFFF' },
 		{ y: 16, label: "RIDDOR", color: '#30a4f0' },
