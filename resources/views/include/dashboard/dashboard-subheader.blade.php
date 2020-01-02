@@ -61,8 +61,8 @@
             </div>
             <!-- End Dashboard Options Button -->
         </div>
-        <?php //include('./global/link.user-guide.php') ?>
-        include.global.user-guide
+        @include('include.global.user-guide')
+        
     </div>
 </div>
 <!-- end:: Subheader -->

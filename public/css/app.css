@@ -43629,6 +43629,11 @@ select.input-group-form-control:after {
   height: auto !important;
 }
 
+.risk-assessment__actions h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .risk-assessment__actions .tag {
   font-size: 9px;
   margin-top: 15px;
