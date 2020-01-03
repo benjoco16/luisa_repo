@@ -7,6 +7,17 @@
         .panel-heading.note-toolbar {
             border: none;
             border-radius: 0;
+            background: #FFF;
+            border-bottom: 1px solid #cfcfcf;
+            padding: 5px;
+
+            .btn.dropdown-toggle {
+                border: none;
+            }
+
+            .btn-group > .btn {
+                border: none;
+            }
         }
     }
 

@@ -92,10 +92,14 @@
     }
 }
 
+.panel-heading.note-toolbar>.btn-group {
+    margin-top: 0;
+}
+
 
 .accordion .accordion .risk-assessment {
-    border-top: 1px solid #cfcfcf !important;
-    border-bottom: 1px solid #cfcfcf !important;
+    // border-top: 1px solid #cfcfcf !important;
+    // border-bottom: 1px solid #cfcfcf !important;
     border-right: 1px solid #cfcfcf !important;
 }
 

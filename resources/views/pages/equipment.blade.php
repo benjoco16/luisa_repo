@@ -6,9 +6,9 @@
 
 @section('content')
 @include('include.equipment.equipment-table-filters')
-<div class="kt-portlet mt-4">
+
     @include('include.equipment.equipment-table')
-</div>
+
 
 @include('include.equipment.modal.equipment-modal')
 @endsection

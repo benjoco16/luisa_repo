@@ -10,13 +10,13 @@
 
                 <div class="kt-portlet mb-0 font-ash kt-portlet--head--noborder kt-portlet--height-fluid">
                     <div class="kt-portlet__body p-0">
-                        <div class="row">
-                            <div class="col-md-2">
+                        <div class="d-flex">
+                            <div class="col-md-2 bg-light-gray">
                                 <div class="hazard__symbol">
                                     <img src="{{URL::asset('assets/media/risk/eye_icon.png')}}"/>
                                 </div>
                             </div>
-                            <div class="col-md-10 p-3 text-left">
+                            <div class="col-md-10 text-left py-3">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <h6 class="bold">HAZARD DESCRIPTION</h6>

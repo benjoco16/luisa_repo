@@ -16,7 +16,7 @@
                     <th width="200">Total</th>
                     <th>Published</th>
                     <th width="100">Overdue</th>
-                    <th>Sue in 30 Days</th>
+                    <th>Due in 30 Days</th>
                 </tr>
             </thead>
             <tbody>

@@ -64,7 +64,16 @@
         }
     }
 
+    &__controls {
+        .progress {
+            height: 1.5rem;
+            border-radius: 0;
+        }
+    }
+
     &__progress {
+        
+
         &--high-risk {
             background: #FF0000;
         }
@@ -205,4 +214,8 @@
     box-shadow: 1px 0px 14px -11px rgba(0,0,0,0.75);
     border-left-width: 8px;
     border-left-style: solid;
+}
+
+.note-popover .popover-content>.btn-group, .panel-heading.note-toolbar>.btn-group {
+    // margin-top: 0;
 }

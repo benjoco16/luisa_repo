@@ -1,398 +1,400 @@
-<div class="kt-portlet kt-portlet--head--noborder mt-4">
-    <div class="kt-portlet__body p-0 overflow-auto">
-        <table class="table table-striped font-ash assessment-table" style="min-width: 1023px">
-            <thead>
-                <tr>
-                    <th width="10">
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </th>
-                    <th width="20">
-                        <div class="form-group form-group-sm m-0">
-                            <select class="form-control ml-auto">
-                                <option>Tools</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th width="200">
-                        <label class="mb-2">Task Title</label>
-                        <div class="form-group form-group-sm m-0">
-                            <input class="form-control" type="text" placeholder="e.g. WD40" value="">
-                        </div>
-                    </th>
-                    <th>
-                    <label class="mb-2">Process Title</label>
-                        <div class="form-group form-group-sm m-0">
-                            <input class="form-control" type="text" placeholder="e.g. WD40" value="">
-                        </div>
-                    </th>
-                    <th width="100">
-                    <label class="mb-2">Type</label>
-                        <div class="form-group form-group-sm m-0">
-                            <select class="form-control ml-auto">
-                                <option>Tools</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <label class="mb-2">Reference</label>
-                        <div class="form-group form-group-sm m-0">
-                            <input class="form-control" type="text" placeholder="e.g. WD40" value="">
-                        </div>
-                    </th>
-                    <th width="100">
-                        <label class="mb-2">Risk Rating</label>
-                        <div class="form-group form-group-sm m-0">
-                            <select class="form-control ml-auto">
-                                <option>Tools</option>
-                            </select>
-                        </div>
-                    </th>
-                    <th>
-                        <label class="mb-2">Owner</label>
-                        <div class="form-group form-group-sm m-0">
-                            <input class="form-control" type="text" placeholder="e.g. J. Bloggs" value="">
-                        </div>
-                    </th>
-                    <th>
-                        <label class="mb-2">Assessed By</label>
-                        <div class="form-group form-group-sm m-0">
-                            <input class="form-control" type="text" placeholder="e.g. M. R. Smith" value="">
-                        </div>
-                    </th>
-                    <th>
-                        <label class="mb-2">Review Date</label>
-                        <div class="form-group form-group-sm m-0">
-                            <input class="form-control" type="text" placeholder="e.g. 25/12/19" value="">
-                        </div>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+<div class="kt-portlet mt-4">
+    <div class="kt-portlet kt-portlet--head--noborder mb-0">
+        <div class="kt-portlet__body p-0 overflow-auto">
+            <table class="mb-0 table table-striped font-ash assessment-table" style="min-width: 1023px">
+                <thead>
+                    <tr>
+                        <th width="10">
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </th>
+                        <th width="20">
+                            <div class="form-group form-group-sm m-0">
+                                <select class="form-control ml-auto">
+                                    <option>Tools</option>
+                                </select>
                             </div>
-                        </div>
-                    </td>
-                    <td class="ellipsed">This button links to the assessment</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+                        </th>
+                        <th width="200">
+                            <label class="mb-2">Task Title</label>
+                            <div class="form-group form-group-sm m-0">
+                                <input class="form-control" type="text" placeholder="e.g. WD40" value="">
                             </div>
-                        </div>
-
-                    </td>
-                    <td class="ellipsed">Title of it</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+                        </th>
+                        <th>
+                        <label class="mb-2">Process Title</label>
+                            <div class="form-group form-group-sm m-0">
+                                <input class="form-control" type="text" placeholder="e.g. WD40" value="">
                             </div>
-                        </div>
-                    </td>
-                    <td class="ellipsed">Using: (Aerosol) Mechoil - Copy</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+                        </th>
+                        <th width="100">
+                        <label class="mb-2">Type</label>
+                            <div class="form-group form-group-sm m-0">
+                                <select class="form-control ml-auto">
+                                    <option>Tools</option>
+                                </select>
                             </div>
-                        </div>
-                    </td>
-                    <td class="ellipsed">Cleaning the washrooms</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+                        </th>
+                        <th>
+                            <label class="mb-2">Reference</label>
+                            <div class="form-group form-group-sm m-0">
+                                <input class="form-control" type="text" placeholder="e.g. WD40" value="">
                             </div>
-                        </div>
-                    </td>
-                    <td class="ellipsed">Using: Kleenist Air Freshener Aerosol</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+                        </th>
+                        <th width="100">
+                            <label class="mb-2">Risk Rating</label>
+                            <div class="form-group form-group-sm m-0">
+                                <select class="form-control ml-auto">
+                                    <option>Tools</option>
+                                </select>
                             </div>
-                        </div>
-                    </td>
-                    <td class="ellipsed">Lubricating A Door Hinge</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+                        </th>
+                        <th>
+                            <label class="mb-2">Owner</label>
+                            <div class="form-group form-group-sm m-0">
+                                <input class="form-control" type="text" placeholder="e.g. J. Bloggs" value="">
                             </div>
-                        </div>
-                    </td>
-                    <td class="ellipsed">Warehouse doors</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
-                            <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="flaticon2-edit font-yellow font-size-md"></i>
-                                    Edit Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="la la-file font-purple font-size-md" style=""></i>
-                                    Copy Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-building font-blue font-size-md" style=""></i>
-                                    Archive Assessment
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
-                                    <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
-                                    Change Assessment Owner
-                                </a>
+                        </th>
+                        <th>
+                            <label class="mb-2">Assessed By</label>
+                            <div class="form-group form-group-sm m-0">
+                                <input class="form-control" type="text" placeholder="e.g. M. R. Smith" value="">
                             </div>
-                        </div>
-                    </td>
-                    <td class="ellipsed">Using: MOLYKYOTE(R) 3402-C LF ANTI-DEPIS</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-            </tbody>
-        </table>
+                        </th>
+                        <th>
+                            <label class="mb-2">Review Date</label>
+                            <div class="form-group form-group-sm m-0">
+                                <input class="form-control" type="text" placeholder="e.g. 25/12/19" value="">
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ellipsed">This button links to the assessment</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td class="ellipsed">Title of it</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ellipsed">Using: (Aerosol) Mechoil - Copy</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ellipsed">Cleaning the washrooms</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ellipsed">Using: Kleenist Air Freshener Aerosol</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ellipsed">Lubricating A Door Hinge</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ellipsed">Warehouse doors</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="kt-checkbox">
+                                <input type="checkbox" name="checkboxes">
+                                <span></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="dropdown dropright">
+                                <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
+                                <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                        Edit Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="la la-file font-purple font-size-md" style=""></i>
+                                        Copy Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                        Archive Assessment
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
+                                        <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                        Change Assessment Owner
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ellipsed">Using: MOLYKYOTE(R) 3402-C LF ANTI-DEPIS</td>
+                        <td></td>
+                        <td>Task</td>
+                        <td>RA1234567</td>
+                        <td>Low</td>
+                        <td>Michael Mouse</td>
+                        <td>W. Disney</td>
+                        <td>8/09/19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 

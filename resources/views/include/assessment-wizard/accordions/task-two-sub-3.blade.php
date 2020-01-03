@@ -9,13 +9,13 @@
         <div class="card-body hazard__section">
             <div class="kt-portlet mb-4 font-ash kt-portlet--head--noborder kt-portlet--height-fluid">
                 <div class="kt-portlet__body p-0">
-                    <div class="row">
-                        <div class="col-md-2">
+                    <div class="d-flex">
+                        <div class="col-md-2 bg-light-gray">
                             <div class="hazard__symbol">
                                 <img src="{{URL::asset('assets/media/risk/eye_icon.png')}}">
                             </div>
                         </div>
-                        <div class="col-md-10 p-3 text-left">
+                        <div class="col-md-10 py-3 text-left">
                             <div class="row">
                                 <div class="col-md-4">
                                     <h6 class="bold">HAZARD DESCRIPTION</h6>
@@ -124,13 +124,13 @@
             </div>
             <div class="kt-portlet mb-4 font-ash kt-portlet--head--noborder kt-portlet--height-fluid">
                 <div class="kt-portlet__body p-0">
-                    <div class="row">
-                        <div class="col-md-2">
+                    <div class="d-flex">
+                        <div class="col-md-2 bg-light-gray">
                             <div class="hazard__symbol">
                                 <img src="{{URL::asset('assets/media/assessment-wizard/hazard-description.png')}}">
                             </div>
                         </div>
-                        <div class="col-md-10 p-3 text-left">
+                        <div class="col-md-10 py-3 text-left">
                             <div class="row">
                                 <div class="col-md-4">
                                     <h6 class="bold">HAZARD DESCRIPTION</h6>

@@ -42416,6 +42416,17 @@ body a {
 .wysiwyg .note-editor .panel-heading.note-toolbar {
   border: none;
   border-radius: 0;
+  background: #FFF;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 5px;
+}
+
+.wysiwyg .note-editor .panel-heading.note-toolbar .btn.dropdown-toggle {
+  border: none;
+}
+
+.wysiwyg .note-editor .panel-heading.note-toolbar .btn-group > .btn {
+  border: none;
 }
 
 .wysiwyg .note-statusbar {
@@ -42844,9 +42855,11 @@ tr:first-child > td > .fc-day-grid-event {
   border: 1px solid #30a4f0;
 }
 
+.panel-heading.note-toolbar > .btn-group {
+  margin-top: 0;
+}
+
 .accordion .accordion .risk-assessment {
-  border-top: 1px solid #cfcfcf !important;
-  border-bottom: 1px solid #cfcfcf !important;
   border-right: 1px solid #cfcfcf !important;
 }
 
@@ -43606,6 +43619,11 @@ select.input-group-form-control:after {
 .risk-assessment__task-details textarea:active,
 .risk-assessment__task-details textarea:focus {
   outline: 0;
+}
+
+.risk-assessment__controls .progress {
+  height: 1.5rem;
+  border-radius: 0;
 }
 
 .risk-assessment__progress--high-risk {

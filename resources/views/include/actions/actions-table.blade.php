@@ -1,4 +1,4 @@
-<div class="kt-portlet kt-portlet--head--noborder mt-4">
+<div class="kt-portlet kt-portlet--head--noborder mt-4 ">
     <div class="kt-portlet__body p-0 overflow-auto">
         <table class="table table-striped font-ash assessment-table" style="min-width: 1023px">
             <thead>
